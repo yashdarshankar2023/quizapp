@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="question.css">
+</head>
+
+<body>
+    
+    
+    <button onclick="logout()" id="logoutbtn" class="btn btn-danger">Log Out</button>
+    <div class="container">
+        <br>
+        <br>
+        
+
+        <h1 id="question">Q.1) What is a capital of India ?</h1>
+        <br>
+        <br>
+    
+        
+
+        <ul class="choices">
+
+            <label><input type="radio" name="question1" value="A" required /><span id="option1">Chennai</span></label>
+            <br>
+
+            <label><input type="radio" name="question1" value="B" required /><span id="option2">Banglore</span></label>
+            <br>
+
+            <label><input type="radio" name="question1" value="C" required /><span id="option3">Mumbai</span></label>
+            <br>
+
+            <label><input type="radio" name="question1" value="D" required /><span id="option4">New Delhi</span></label>
+            <br>
+        </ul>
+        <div class="twobuttons">
+            <button type="button" class="btn btn-success" onclick="submit()">Submit</button>
+            <button type="button" class="btn btn-warning" onclick="skip()">Skip</button>
+
+            
+        </div>
+    </div>
+
+
+    <script src="first.js">
+    </script>
+
+</body>
+
+</html>

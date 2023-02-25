@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <form class="form2" onsubmit="signup()"> 
+        <h3>Sign Up</h3>
+
+        <label for="username">Username</label>
+        <input type="text" placeholder="Username" id="username" pattern="[a-z]{1,15}" title="User should only contain text upto 15 character with no space" required>
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+
+        <label for="password">Confirm Password</label>
+        <input type="password" placeholder="Password" id="password1" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+
+        
+        <label for="username">Security Question</label>
+        <input type="text" placeholder="What is name of your favorite sports player ?" id="security"  pattern="[a-z]{1,15}" title="User should only contain text upto 15 character" required>
+        
+        <button  type="submit">Log In</button>
+        <br>
+        <br>
+        <br>
+        
+        <p>Already have an account ? <a href="index.html">Sign in</a></p>
+        
+    </form>
+
+    
+<script src="signup_script.js">
+</script>
+</body>
+
+
+</html>
